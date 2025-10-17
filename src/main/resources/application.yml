@@ -1,0 +1,13 @@
+auth:
+  issuer: "https://auth.stormhook.local"
+  audience: "https://api.stormhook.local"
+  token-ttl-seconds: 3600
+
+  clients:
+    tenant-admin-42:
+      secret: "$2b$12$7Ghtw9b9Jt9CibWR60XJPeAUbtrsYDOUN2Giu/9LpIaxy5xKx/Opy"  # example hash
+      allowed-scopes:
+        - "admin:tenants:read"
+        - "admin:tenants:write"
+        - "admin:tenants:create"
+      tenant-id: "T987"
